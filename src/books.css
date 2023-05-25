@@ -1,0 +1,11 @@
+body {
+  background-color: #93d696;
+}
+
+.bg-dark {
+  background-color: #18721d !important;
+}
+
+.text-success {
+  color: #17c920 !important;
+}
