@@ -95,7 +95,7 @@ const App = () => {
             // console.log(book.id);
             return (
               <div key={book.id} className="col-sm-4 col-12">
-                <div className="card text-center my-5 p-3">
+                <div className="card text-center my-5 p-3 shadOnHower">
                   <BookItem
                     book={book}
                     removeBook={removeBook}
@@ -174,7 +174,7 @@ const Sum = (props) => {
       sum += +(book.price * book.count);
     });
   }
-  return <div> Суммарна вартість: {sum.toFixed(2)} </div>;
+  return <div> Сумарная стоимость: {sum.toFixed(2)} </div>;
 };
 
 class Count extends React.Component {
@@ -183,7 +183,7 @@ class Count extends React.Component {
     this.props.goods.forEach((book) => {
       count += book.count;
     });
-    return <div> Кількість книг в кошику: {count} </div>;
+    return <div> Количество книг в корзине: {count} </div>;
   }
 }
 
